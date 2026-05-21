@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ado Technology | Tech & Creative Partner Portfolio</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Ado Technology | Projects & Insights Workspace</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Inline Tailwind Configurations -->
     <script>
         tailwind.config = {
             theme: {
@@ -37,10 +34,9 @@
 </head>
 <body class="font-sans antialiased selection:bg-accentCyan/30 selection:text-white">
 
-    <!-- 1. STICKY NAVIGATION BAR -->
     <header class="sticky top-0 z-50 w-full border-b border-gray-800 bg-darkBg/80 backdrop-blur-md">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-            <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-accentCyan transition-colors">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-white hover:text-accentCyan transition-colors">
                 ADO TECHNOLOGY<span class="text-accentCyan">.</span>
             </a>
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
@@ -59,7 +55,6 @@
 
     <main class="space-y-32 pb-24">
 
-        <!-- 2. HERO SECTION -->
         <section class="mx-auto max-w-7xl px-6 pt-20 md:pt-32 text-center md:text-left">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-7 space-y-6">
@@ -83,7 +78,6 @@
                     </div>
                 </div>
                 <div class="md:col-span-5 flex justify-center">
-                    <!-- Conceptual visual showing system stack / tech elements -->
                     <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-2xl bg-gradient-to-tr from-accentCyan/20 to-accentViolet/20 border border-gray-800 flex items-center justify-center shadow-2xl p-6 overflow-hidden group">
                         <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:20px_20px]"></div>
                         <div class="space-y-4 text-center z-10">
@@ -96,7 +90,6 @@
             </div>
         </section>
 
-        <!-- 3. TRUST STRIP / CAPABILITIES -->
         <section class="border-y border-gray-800/60 bg-darkCard/30 py-12">
             <div class="mx-auto max-w-7xl px-6">
                 <p class="text-center text-xs font-semibold uppercase tracking-widest text-gray-500 mb-8">Core Areas of Expertise</p>
@@ -120,13 +113,11 @@
             </div>
         </section>
 
-        <!-- 4. CASE STUDIES & PORTFOLIO COMPONENT (WITH LIVE FILTERING) -->
         <section id="projects" class="mx-auto max-w-7xl px-6 scroll-mt-24">
             <div class="text-center md:text-left space-y-4 mb-12">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Proven Solutions & Case Studies</h2>
                 <p class="max-w-xl text-gray-400 text-sm md:text-base">Real projects, architecture implementations, and measurable performance results across applications.</p>
                 
-                <!-- Category Filter Buttons -->
                 <div class="flex flex-wrap gap-2 pt-4 justify-center md:justify-start" id="filter-container">
                     <button onclick="filterSelection('all')" class="btn-filter active bg-accentCyan text-white px-4 py-1.5 text-xs font-semibold rounded-md transition-colors border border-accentCyan">Show All</button>
                     <button onclick="filterSelection('fullstack')" class="btn-filter bg-darkCard text-gray-400 px-4 py-1.5 text-xs font-semibold rounded-md transition-colors border border-gray-800 hover:text-white">Full-Stack Apps</button>
@@ -134,9 +125,7 @@
                 </div>
             </div>
 
-            <!-- Grid Items -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
                 <div class="project-item fullstack rounded-xl border border-gray-800 bg-darkCard overflow-hidden flex flex-col justify-between">
                     <div class="p-6 space-y-4">
                         <div class="flex justify-between items-start">
@@ -154,11 +143,10 @@
                     </div>
                     <div class="border-t border-gray-800/80 px-6 py-4 bg-darkBg/30 flex justify-between items-center">
                         <span class="text-xs text-gray-400 font-medium">Situation ➔ Task ➔ Action ➔ Result</span>
-                        <a href="#" class="inline-flex items-center text-xs font-semibold text-accentCyan hover:underline">Read Complete Case &rarr;</a>
+                        <a href="https://github.com/ado" target="_blank" class="inline-flex items-center text-xs font-semibold text-accentCyan hover:underline">View Repository &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="project-item creative rounded-xl border border-gray-800 bg-darkCard overflow-hidden flex flex-col justify-between">
                     <div class="p-6 space-y-4">
                         <div class="flex justify-between items-start">
@@ -176,13 +164,12 @@
                     </div>
                     <div class="border-t border-gray-800/80 px-6 py-4 bg-darkBg/30 flex justify-between items-center">
                         <span class="text-xs text-gray-400 font-medium">Situation ➔ Task ➔ Action ➔ Result</span>
-                        <a href="#" class="inline-flex items-center text-xs font-semibold text-accentCyan hover:underline">Read Complete Case &rarr;</a>
+                        <a href="https://github.com/ado" target="_blank" class="inline-flex items-center text-xs font-semibold text-accentCyan hover:underline">View Live Site &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. SERVICES & TIERS -->
         <section id="services" class="mx-auto max-w-7xl px-6 scroll-mt-24">
             <div class="text-center space-y-4 mb-16">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Productized Solutions & Pricing Tiers</h2>
@@ -190,7 +177,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-                <!-- Tier 1 -->
                 <div class="rounded-xl border border-gray-800 bg-darkCard p-8 flex flex-col justify-between relative">
                     <div class="space-y-6">
                         <div>
@@ -209,7 +195,6 @@
                     </div>
                 </div>
 
-                <!-- Tier 2 (Highlighted) -->
                 <div class="rounded-xl border-2 border-accentCyan bg-darkCard p-8 flex flex-col justify-between relative shadow-xl shadow-accentCyan/5">
                     <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-accentCyan to-accentViolet px-3 py-1 text-2xs font-bold uppercase tracking-wider text-white">Most Popular</div>
                     <div class="space-y-6">
@@ -230,7 +215,6 @@
                     </div>
                 </div>
 
-                <!-- Tier 3 -->
                 <div class="rounded-xl border border-gray-800 bg-darkCard p-8 flex flex-col justify-between relative">
                     <div class="space-y-6">
                         <div>
@@ -250,7 +234,6 @@
                 </div>
             </div>
 
-            <!-- DELIVERY TIMELINE WORKFLOW -->
             <div class="mt-20 max-w-3xl mx-auto border border-gray-800/80 bg-darkCard/20 rounded-xl p-8">
                 <h3 class="text-lg font-bold text-white mb-8 text-center">Engineered Execution Timeline</h3>
                 <div class="relative border-l border-gray-800 ml-4 space-y-8">
@@ -266,181 +249,4 @@
                     </div>
                     <div class="relative pl-6">
                         <span class="absolute left-[-5px] top-1.5 h-2.5 w-2.5 rounded-full bg-accentCyan"></span>
-                        <h4 class="text-sm font-semibold text-white">03. Full-Stack Assembly & Validation</h4>
-                        <p class="text-xs text-gray-400 mt-1">Building modular logic blocks using best-practice security practices, handling clean testing suites, and structuring container instances.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. INSIGHTS & DYNAMIC EMBEDDED MICRO-TOOL -->
-        <section id="hub" class="mx-auto max-w-7xl px-6 scroll-mt-24">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                
-                <!-- Left Column: Build in Public Blog -->
-                <div class="lg:col-span-6 space-y-6">
-                    <h2 class="text-2xl font-bold text-white">Engineering Insights</h2>
-                    <p class="text-sm text-gray-400">Documenting production challenges, system optimizations, and solutions discovered while building complex web infrastructure.</p>
-                    
-                    <div class="space-y-4">
-                        <article class="p-5 rounded-lg border border-gray-800 bg-darkCard hover:border-gray-700 transition-colors cursor-pointer group">
-                            <span class="text-2xs font-mono font-bold text-accentCyan uppercase tracking-wider">Backend Architecture</span>
-                            <h3 class="text-base font-bold text-white mt-1 group-hover:text-accentCyan transition-colors">Optimizing MongoDB Indexing Strategies for Enterprise Transactions</h3>
-                            <p class="text-xs text-gray-400 mt-2 line-clamp-2">How proper routing definitions and deliberate indexing logic can drastically reduce processing lag times inside heavily active data collections.</p>
-                        </article>
-
-                        <article class="p-5 rounded-lg border border-gray-800 bg-darkCard hover:border-gray-700 transition-colors cursor-pointer group">
-                            <span class="text-2xs font-mono font-bold text-accentViolet uppercase tracking-wider">DevOps Protocols</span>
-                            <h3 class="text-base font-bold text-white mt-1 group-hover:text-accentViolet transition-colors">Achieving Environment Parity Using Containerized Docker Engines</h3>
-                            <p class="text-xs text-gray-400 mt-2 line-clamp-2">A step-by-step review detailing how running local development models inside persistent virtual networks prevents live server integration failures.</p>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- Right Column: Interactive Micro-Tool (Live TTS Engine Demonstration) -->
-                <div class="lg:col-span-6 rounded-xl border border-gray-800 bg-darkCard p-6 space-y-4">
-                    <div class="flex items-center gap-2">
-                        <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
-                        <h3 class="text-lg font-bold text-white">Live Utility Showcase: Text-to-Speech Engine</h3>
-                    </div>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        Instead of just showing portfolio code, here is a functional demonstration of a built-in accessibility tool. Enter any text snippet below to instantly generate structural speech playbacks directly inside your browser interface.
-                    </p>
-                    
-                    <!-- Form Controls -->
-                    <div class="space-y-3 pt-2">
-                        <div>
-                            <label class="block text-2xs font-mono text-gray-400 uppercase tracking-wider mb-1" for="tts-text">Input Text String</label>
-                            <textarea id="tts-text" rows="3" class="w-full rounded-md border border-gray-800 bg-darkBg p-2.5 text-xs text-white focus:border-accentCyan focus:outline-none" placeholder="Hello! Welcome to my dynamic portfolio engine. Type anything here and select trigger below..."></textarea>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-2xs font-mono text-gray-400 uppercase tracking-wider mb-1" for="tts-volume">Playback Volume</label>
-                                <input type="range" id="tts-volume" min="0" max="1" step="0.1" value="1" class="w-full accent-accentCyan bg-darkBg rounded-lg cursor-pointer">
-                            </div>
-                            <div>
-                                <label class="block text-2xs font-mono text-gray-400 uppercase tracking-wider mb-1" for="tts-rate">Engine Speed</label>
-                                <input type="range" id="tts-rate" min="0.5" max="2" step="0.1" value="1" class="w-full accent-accentViolet bg-darkBg rounded-lg cursor-pointer">
-                            </div>
-                        </div>
-                        <div class="pt-2 flex gap-2">
-                            <button onclick="playTTS()" class="flex-1 rounded bg-accentCyan px-4 py-2 text-xs font-bold text-white hover:opacity-90 transition-opacity">Trigger Audio Playback</button>
-                            <button onclick="stopTTS()" class="rounded border border-gray-700 bg-darkBg px-4 py-2 text-xs font-bold text-gray-300 hover:bg-gray-800 transition-colors">Stop</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 7. CONTACT & INTAKE CONVERSION -->
-        <section id="contact" class="mx-auto max-w-4xl px-6 scroll-mt-24">
-            <div class="rounded-2xl border border-gray-800 bg-gradient-to-b from-darkCard to-darkBg p-8 md:p-12 text-center space-y-6 relative overflow-hidden">
-                <div class="absolute -top-24 -left-24 w-48 h-48 bg-accentCyan/5 rounded-full filter blur-2xl"></div>
-                <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-accentViolet/5 rounded-full filter blur-2xl"></div>
-                
-                <h2 class="text-3xl font-bold tracking-tight text-white">Let's Design Your Digital Growth Road</h2>
-                <p class="mx-auto max-w-lg text-sm text-gray-400 leading-relaxed">
-                    Ready to scale architecture speeds, execute a total brand revamp, or structure custom utility applications? Drop a line and get alignment frameworks built.
-                </p>
-
-                <!-- Intake Capture Form -->
-                <form class="max-w-md mx-auto space-y-4 pt-4 text-left" onsubmit="handleFormSubmit(event)">
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-2xs font-mono text-gray-400 uppercase tracking-wider mb-1" for="contact-name">Full Name</label>
-                            <input type="text" id="contact-name" required class="w-full rounded-md border border-gray-800 bg-darkBg p-2.5 text-xs text-white focus:border-accentCyan focus:outline-none" placeholder="Emmanuel Orinya">
-                        </div>
-                        <div>
-                            <label class="block text-2xs font-mono text-gray-400 uppercase tracking-wider mb-1" for="contact-email">Email Address</label>
-                            <input type="email" id="contact-email" required class="w-full rounded-md border border-gray-800 bg-darkBg p-2.5 text-xs text-white focus:border-accentCyan focus:outline-none" placeholder="emmanuel@example.com">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-2xs font-mono text-gray-400 uppercase tracking-wider mb-1" for="contact-type">Engagement Scope</label>
-                        <select id="contact-type" class="w-full rounded-md border border-gray-800 bg-darkBg p-2.5 text-xs text-white focus:border-accentCyan focus:outline-none text-gray-300">
-                            <option value="fullstack">Full-Stack Application Development</option>
-                            <option value="blueprint">Technical Strategy & Blueprints</option>
-                            <option value="creative">Creative Identity & UI Design</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-2xs font-mono text-gray-400 uppercase tracking-wider mb-1" for="contact-msg">Project Summary</label>
-                        <textarea id="contact-msg" rows="4" required class="w-full rounded-md border border-gray-800 bg-darkBg p-2.5 text-xs text-white focus:border-accentCyan focus:outline-none" placeholder="Briefly highlight what system goals or targets we are solving..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full rounded-lg bg-white py-3 text-xs font-bold text-darkBg hover:bg-gray-200 transition-colors shadow-lg">Submit Secure Engagement Request</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="border-t border-gray-900 bg-darkBg py-8 text-center text-xs text-gray-500 font-mono">
-        &copy; 2026 Adotechnology Engine Framework. All rights reserved.
-    </footer>
-
-    <!-- INTERACTIVE FUNCTIONALITY JAVASCRIPT CONTROLS -->
-    <script>
-        // 1. Dynamic Case Study Category Filter Implementation
-        function filterSelection(category) {
-            const items = document.getElementsByClassName('project-item');
-            const buttons = document.getElementsByClassName('btn-filter');
-            
-            // Handle active button appearance states
-            for (let btn of buttons) {
-                if (btn.getAttribute('onclick').includes(category)) {
-                    btn.classList.add('bg-accentCyan', 'text-white', 'border-accentCyan');
-                    btn.classList.remove('bg-darkCard', 'text-gray-400', 'border-gray-800');
-                } else {
-                    btn.classList.remove('bg-accentCyan', 'text-white', 'border-accentCyan');
-                    btn.classList.add('bg-darkCard', 'text-gray-400', 'border-gray-800');
-                }
-            }
-
-            // Filter item animations
-            for (let item of items) {
-                if (category === 'all') {
-                    item.style.display = 'flex';
-                } else {
-                    if (item.classList.contains(category)) {
-                        item.style.display = 'flex';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                }
-            }
-        }
-
-        // 2. Web Speech Synthesis (TTS Embed Engine) Logic
-        let speechInstance = null;
-
-        function playTTS() {
-            // Cancel active queries
-            window.speechSynthesis.cancel();
-            
-            const txt = document.getElementById('tts-text').value || document.getElementById('tts-text').placeholder;
-            const vol = parseFloat(document.getElementById('tts-volume').value);
-            const rate = parseFloat(document.getElementById('tts-rate').value);
-            
-            speechInstance = new SpeechSynthesisUtterance(txt);
-            speechInstance.volume = vol;
-            speechInstance.rate = rate;
-            
-            window.speechSynthesis.speak(speechInstance);
-        }
-
-        function stopTTS() {
-            window.speechSynthesis.cancel();
-        }
-
-        // 3. Simulated Client Form Intent Submissions
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const name = document.getElementById('contact-name').value;
-            alert(`Awesome receipt confirmation, ${name}! Your strategic alignment package has been queued successfully.`);
-            event.target.reset();
-        }
-    </script>
-</body>
-</html>
+                        <h4 class="text-sm font-semibold text-white">03. Full-Stack Assembly & Validation
